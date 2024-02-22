@@ -72,7 +72,8 @@
     "moduleNameMapper": {
       "^@app/bootcamp-entity(|/.*)$": "<rootDir>/libs/bootcamp-entity/src/$1",
       "^@app/bootcamp-data(|/.*)$": "<rootDir>/libs/bootcamp-data/src/$1",
-      "^@app/bootcamp-businesslogic(|/.*)$": "<rootDir>/libs/bootcamp-businesslogic/src/$1"
+      "^@app/bootcamp-businesslogic(|/.*)$": "<rootDir>/libs/bootcamp-businesslogic/src/$1",
+      "^@app/bootcamp-common(|/.*)$": "<rootDir>/libs/bootcamp-common/src/$1"
     }
   }
 }
