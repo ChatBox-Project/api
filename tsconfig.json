@@ -17,6 +17,25 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {}
+    "paths": {
+      "@app/bootcamp-entity": [
+        "libs/bootcamp-entity/src"
+      ],
+      "@app/bootcamp-entity/*": [
+        "libs/bootcamp-entity/src/*"
+      ],
+      "@app/bootcamp-data": [
+        "libs/bootcamp-data/src"
+      ],
+      "@app/bootcamp-data/*": [
+        "libs/bootcamp-data/src/*"
+      ],
+      "@app/bootcamp-businesslogic": [
+        "libs/bootcamp-businesslogic/src"
+      ],
+      "@app/bootcamp-businesslogic/*": [
+        "libs/bootcamp-businesslogic/src/*"
+      ]
+    }
   }
 }
