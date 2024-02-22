@@ -5,6 +5,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import * as Joi from 'joi';
 @Module({
   imports: [
+    /* This code snippet is setting up a configuration module using the `ConfigModule.forRoot()` method
+       provided by the NestJS framework. Here's what it's doing: */
     ConfigModule.forRoot({
       isGlobal: true,
       validationSchema: Joi.object({
@@ -15,6 +17,8 @@ import * as Joi from 'joi';
         POSTGRES_PASSWORD: Joi.string().required(),
       }),
     }),
+    /* This code snippet is configuring the TypeORM module asynchronously using the
+      `TypeOrmModule.forRootAsync()` method provided by NestJS. Here's what it's doing: */
     TypeOrmModule.forRootAsync({
       useFactory: (configService: ConfigService) => ({
         type: 'postgres',
